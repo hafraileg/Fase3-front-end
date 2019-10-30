@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Estilos CSS -->  
+    <style>
+      .slider{
+      background: url("img/slider.jpg");
+      height: 30vh;
+      background-size: cover;
+      background-position: center;
+      }
+    </style>
+    <title>Calcular Ganancia</title>
+  </head>
+  <body>
+  <!--Contenedor de la imagen slider-->
+  <section class="container-fluid slider">
+  </section>
+  <!--Barra de navegacion responsive con Bootstrap 4-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top">
+          Tesla Electronics
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto ml-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">Administrador</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Inventario
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="ingrproducto.html">Ingresar producto</a>
+                  <a class="dropdown-item" href="actproducto.html">Actualizar producto</a>
+                  <a class="dropdown-item" href="elimproducto.html">Eliminar producto</a>
+                  <a class="dropdown-item" href="consproducto.html">Consultar producto</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ventas
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="ventporproducto.html">Ventas por producto</a>
+                  </div>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Utilidades
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="calcularganancia.html">Calcular ganacia</a>
+                <a class="dropdown-item" href="calcularesistencia.html">Calcular resistencia</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+          </ul>
+    <div class="d-flex flex-row justify-content-center">
+      <a href="https://www.unad.edu.co/" class="btn btn-outline-success mr-2">UNAD</a>
+      <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" class="btn btn-outline-danger">Bootstrap 4.3</a>
+    </div>
+    </div>
+  </nav>
+<!--Fin navbar-->
+<!--Formulario Calcular Resistencia-->
+<p class="text-capitalize text-center font-weight-light h4 pt-3 pb-3">Calculadora de Resistencias</p>
+<div class="container">
+  <img src="img/Resistencia.png" width="400" height="400" class="rounded mx-auto d-block img-thumbnail img-fluid" alt="...">
+</div>
+<form class="container" name="f2" action="calcularesistencia.html" method="POST">
+<div class="container d-flex justify-content-center form-group row mt-3">
+    <label for="" class="col-3 col-form-label">Ingrese el Color Franaja 1</label>
+    <div class="col-2">
+    <select name="franja1" class="form-control" type="text" placeholder="Default input" >
+      <option value="0">Negro</option>
+      <option value="1">Marr&oacute;n</option>
+      <option value="2">Rojo</option>
+      <option value="3">Naranja</option>
+      <option value="4">Amarillo</option>
+      <option value="5">Verde</option>
+      <option value="6">Azul</option>
+      <option value="7">Violeta</option>
+      <option value="8">Gris</option>
+      <option value="9">Blanco</option>
+    </select>
+    </div>
+</div>
+<div class="container d-flex justify-content-center form-group row mt-3">
+    <label for="" class="col-3 col-form-label">Ingrese el Color Franaja 2</label>
+    <div class="col-2">
+    <select name="franja2" class="form-control" type="text" placeholder="Default input" >
+      <option value="0">Negro</option>
+      <option value="1">Marr&oacute;n</option>
+      <option value="2">Rojo</option>
+      <option value="3">Naranja</option>
+      <option value="4">Amarillo</option>
+      <option value="5">Verde</option>
+      <option value="6">Azul</option>
+      <option value="7">Violeta</option>
+      <option value="8">Gris</option>
+      <option value="9">Blanco</option>
+    </select>
+    </div>
+</div>
+<div class="container d-flex justify-content-center form-group row mt-3">
+    <label for="" class="col-3 col-form-label">Ingrese el Color Franaja 3</label>
+    <div class="col-2">
+    <select name="franja3" class="form-control" type="text" placeholder="Default input" >
+      <option value="0">Negro</option>
+      <option value="10">Marr&oacute;n</option>
+      <option value="100">Rojo</option>
+      <option value="10000">Amarillo</option>
+      <option value="100000">Verde</option>
+      <option value="1000000">Azul</option>
+      <option value="10000000">Violeta</option>
+      <option value="100000000">Gris</option>
+      <option value="1000000000">Blanco</option>
+    </select>
+    </div>
+</div>
+<div class="container d-flex justify-content-center form-group row mt-3">
+    <label for="" class="col-3 col-form-label">Ingrese el Color Franaja 4</label>
+    <div class="col-2">
+    <select name="franja4" class="form-control" type="text" placeholder="Default input">
+      <option value="5" >Oro    5% </option>        
+      <option value="10">Plata  10%</option>
+    </select>
+    </div>
+</div>
+<div class="container d-flex justify-content-center mt-3">
+    <input type="Button" name="" value="Calcular" onclick="calcular()" class="btn btn-primary">
+</div>
+    <div class="container d-flex justify-content-center form-group row mt-3">
+        <label for="resultado" class="col-1 col-form-label">Resultado:</label>
+        <input type="text" class="form-control col-5 col-form-label" id="c" name="c" placeholder="Aquí se imprime el resultado"> 
+    </div>
+</form>
+<!--Final Formulario-->
+<!--Jumbotron con Bootstrap-->
+<div class="jumbotron mt-5 rounded-0">
+<div class="container">
+    <p class="lead">2019 © Todos los derechos reservados | Henry Andres Fraile Gonzalez</p>
+    <hr class="my-4">
+    <div class="d-flex justify-content-between align-items-center">
+      <p>Henry Andres Fraile Gonzalez, Codigo: 1090455355, Programacion de sitios web 301127_34.</p>
+      <a class="btn btn-dark btn-md" href="https://www.dropbox.com/s/3r04foo23amkc76/Syllabus%20del%20curso%20Programaci%C3%B3n%20de%20sitios%20web.pdf?dl=0" role="button">Leer mas</a>    
+    </div>
+</div>
+</div>
+<!--Final Jumbotron con Bootstrap-->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
